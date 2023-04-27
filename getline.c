@@ -40,7 +40,7 @@ size_t _getline(char **kon, size_t *lof, int size)
 				(*kon)[mok] = '\0';
 				return (mok);
 			}
-			(*kon)[lon++] = buff[count++];
+			(*kon)[mok++] = buff[count++];
 			if ((*kon)[mok - 1] == '\n')
 			{
 				(*kon)[mok] = '\0';

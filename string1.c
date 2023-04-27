@@ -9,7 +9,7 @@
  */
 char *_strcpy(char *dest, const char *src)
 {
-	char *tm = dest;
+	char *lf = dest;
 
 	while (*src != '\0')
 	{
@@ -45,4 +45,3 @@ char *_strcat(char *dest, const char *src)
 	*dest = '\0';
 	return (lf);
 }
-

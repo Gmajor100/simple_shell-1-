@@ -12,7 +12,7 @@ int _strcmp(char *str1, char *str2)
 	int pen = 0, end_result;
 
 	while (*(str1 + pen) == *(str2 + pen) && *(str1 + pen) != '\0')
-		h++;
+		pen++;
 
 	end_result = (*(str1 + pen) - *(str2 + pen));
 
@@ -28,7 +28,7 @@ int _strcmp(char *str1, char *str2)
 char *_strdup(char *string)
 {
 	char *pen;
-	int f, lenght;
+	int w, lenght;
 
 	if (string == NULL)
 	{
@@ -42,7 +42,7 @@ char *_strdup(char *string)
 		return (NULL);
 	for (w = 0; *string != '\0'; string++, w++)
 	{
-		ops[w] = string[0];
+		pen[w] = string[0];
 	}
 	pen[w++] = '\0';
 

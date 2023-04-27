@@ -22,11 +22,11 @@ int _putchar(char c)
 int _putstr(char *str)
 {
 	int length;
-	int b;
+	int v;
 
 	length = _strlen(str);
 
-	for (v = 0; v < len; v++)
+	for (v = 0; v < length; v++)
 	{
 		_putchar(str[v]);
 	}

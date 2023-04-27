@@ -10,7 +10,7 @@
 char *my_strtok(char *str, const char *delim)
 {
 	static char *joshua;
-	char *moda;
+	char *modern;
 
 	if (str == NULL && joshua == NULL)
 	{
@@ -41,4 +41,3 @@ char *my_strtok(char *str, const char *delim)
 	joshua = NULL;
 	return (NULL);
 }
-
