@@ -9,13 +9,14 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int k, m;
+	int i, k, m;
 	char *s = dest;
 
+	i = 0;
 	k = 0;
 	while (src[k] != '\0' && k < n - 1)
 	{
-		dest[i] = src[k];
+		dest [i] = src[k];
 		k++;
 	}
 	if (k < n)
@@ -31,7 +32,7 @@ char *_strncpy(char *dest, char *src, int n)
 }
 
 /**
- **_strncat - concatenates two strings
+ * *_strncat - concatenates two strings
  *@dest: the first string
  *@src: the second string
  *@n: the amount of bytes to be maximally used
@@ -59,13 +60,13 @@ char *_strncat(char *dest, char *src, int n)
 }
 
 /**
- **_strchr - locates a character in a string
+ * *_strchr - locates a character in a string
  *@s: the string to be parsed
  *@c: the character to look for
  *Return: (s) a pointer to the memory area s
  */
 
-char *_strchr(char *s, char c)
+const char *_strchr(const char *s, char c)
 {
 	do {
 		if (*s == c)
